@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerDescription as DrawerDescriptionPrimitive } from 'vaul-vue'
 import { cn } from '@/lib/utils'
 import { computed } from 'vue'
 
@@ -20,10 +20,10 @@ const descriptionClass = computed(() =>
 </script>
 
 <template>
-  <DrawerPrimitive.Description
+  <DrawerDescriptionPrimitive
     data-slot="drawer-description"
     :class="descriptionClass"
   >
     <slot />
-  </DrawerPrimitive.Description>
+  </DrawerDescriptionPrimitive>
 </template>

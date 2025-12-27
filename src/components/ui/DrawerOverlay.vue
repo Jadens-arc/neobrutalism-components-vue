@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerOverlay as DrawerOverlayPrimitive } from 'vaul-vue'
 import { cn } from '@/lib/utils'
 import { computed } from 'vue'
 
@@ -23,7 +23,7 @@ const overlayClass = computed(() =>
 </script>
 
 <template>
-  <DrawerPrimitive.Overlay
+  <DrawerOverlayPrimitive
     data-slot="drawer-overlay"
     :class="overlayClass"
   />

@@ -1,3 +1,134 @@
+# Neobrutalism Components Vue
+
+A collection of neobrutalist UI components for Vue 3, built with Radix Vue and Tailwind CSS v4.
+
+## Features
+
+- 🎨 Neobrutalist design style with bold borders and shadows
+- 🧩 40+ UI components
+- ⭐ 40 decorative star components
+- 🎯 Built with Radix Vue primitives
+- 🌙 Dark mode support
+- 📦 Tree-shakeable
+- 🔧 Fully customizable with Tailwind CSS
+
+## Installation
+
+```bash
+npm install neobrutalism-components-vue
+```
+
+### Peer Dependencies
+
+Install the required peer dependencies:
+
+```bash
+npm install vue radix-vue @vueuse/core class-variance-authority clsx tailwind-merge lucide-vue-next date-fns vue-sonner v-calendar embla-carousel-vue vaul-vue vue3-otp-input
+```
+
+### Tailwind CSS Configuration
+
+Install Tailwind CSS v4:
+
+```bash
+npm install -D tailwindcss@^4.0.0 @tailwindcss/postcss autoprefixer postcss
+```
+
+Configure PostCSS (`postcss.config.js`):
+
+```javascript
+export default {
+  plugins: {
+    '@tailwindcss/postcss': {},
+    autoprefixer: {},
+  },
+}
+```
+
+Create your global CSS file with the neobrutalism theme:
+
+```css
+@import "tailwindcss";
+
+:root {
+  --border-radius: 5px;
+  --box-shadow-x: 4px;
+  --box-shadow-y: 4px;
+  --reverse-box-shadow-x: -4px;
+  --reverse-box-shadow-y: -4px;
+  --heading-font-weight: 700;
+  --base-font-weight: 500;
+  --background: oklch(93.46% 0.0304 254.32);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main: oklch(67.47% 0.1725 259.61);
+  --border: oklch(0% 0 0);
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+@theme inline {
+  --color-main: var(--main);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --radius-base: var(--border-radius);
+  --shadow-shadow: var(--shadow);
+  --font-weight-base: var(--base-font-weight);
+  --font-weight-heading: var(--heading-font-weight);
+}
+```
+
+## Usage
+
+Import components in your Vue files:
+
+```vue
+<script setup>
+import { Button, Card, CardHeader, CardTitle, CardContent } from 'neobrutalism-components-vue'
+</script>
+
+<template>
+  <Card>
+    <CardHeader>
+      <CardTitle>Hello World</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <Button>Click me!</Button>
+    </CardContent>
+  </Card>
+</template>
+```
+
+## Available Components
+
+### UI Components
+- Accordion, Alert, AlertDialog, Avatar, Badge, Breadcrumb
+- Button, Calendar, Card, Carousel, Checkbox, Collapsible
+- Command, ContextMenu, Dialog, Drawer, DropdownMenu
+- HoverCard, Input, InputOTP, Label, Marquee, Menubar
+- NavigationMenu, Pagination, Popover, Progress, RadioGroup
+- Resizable, ScrollArea, Select, Sheet, Sidebar, Skeleton
+- Slider, Switch, Table, Tabs, Textarea, Tooltip
+
+### Star Components
+- S1 through S40 - Decorative star components
+
+## Development
+
+See the `example/` folder for a complete working example.
+
+### Run the example:
+
+```bash
+cd example
+npm install
+npm run dev
+```
+
+## License
+
+MIT
+
 # Neobrutalism Components - Vue 3
 
 A complete UI component library for Vue 3 featuring bold, brutalist design with thick borders, offset shadows, and high contrast colors.

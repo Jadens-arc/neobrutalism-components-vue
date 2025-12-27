@@ -98,7 +98,7 @@ export { default as DialogPortal } from './components/ui/DialogPortal.vue'
 export { default as DialogTitle } from './components/ui/DialogTitle.vue'
 export { default as DialogTrigger } from './components/ui/DialogTrigger.vue'
 
-export { default as drawer } from './components/ui/drawer.vue'
+export { default as Drawer } from './components/ui/drawer.vue'
 export { default as DrawerClose } from './components/ui/DrawerClose.vue'
 export { default as DrawerContent } from './components/ui/DrawerContent.vue'
 export { default as DrawerDescription } from './components/ui/DrawerDescription.vue'

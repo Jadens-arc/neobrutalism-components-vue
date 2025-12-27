@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerTrigger as DrawerTriggerPrimitive } from 'vaul-vue'
 
 defineOptions({
   name: 'DrawerTrigger'
@@ -7,7 +7,7 @@ defineOptions({
 </script>
 
 <template>
-  <DrawerPrimitive.Trigger data-slot="drawer-trigger">
+  <DrawerTriggerPrimitive data-slot="drawer-trigger">
     <slot />
-  </DrawerPrimitive.Trigger>
+  </DrawerTriggerPrimitive>
 </template>

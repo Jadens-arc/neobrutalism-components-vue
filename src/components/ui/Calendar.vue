@@ -58,10 +58,8 @@ const model = computed({
 </template>
 
 <style scoped>
-@reference "../../../src/assets/css/globals.css";
-
 :deep(.vc-container) {
-  @apply rounded-base! border-2 border-border bg-main p-3 font-heading shadow-shadow;
+  @apply rounded-base border-2 border-border bg-main p-3 font-heading shadow-shadow;
 }
 
 :deep(.vc-weeks) {
@@ -86,7 +84,7 @@ const model = computed({
 }
 
 :deep(.vc-highlight) {
-  @apply bg-black! text-white! rounded-base;
+  @apply bg-black text-white rounded-base;
 }
 
 :deep(.vc-highlight-content-light) {
@@ -94,7 +92,7 @@ const model = computed({
 }
 
 :deep(.is-today .vc-day-content) {
-  @apply bg-secondary-background text-foreground!;
+  @apply bg-secondary-background text-foreground;
 }
 
 :deep(.vc-day:not(.in-month) .vc-day-content) {

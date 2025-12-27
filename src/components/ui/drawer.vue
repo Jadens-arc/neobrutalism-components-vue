@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerRoot } from 'vaul-vue'
 import { cn } from '@/lib/utils'
 
 defineOptions({
@@ -15,10 +15,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <DrawerPrimitive.Root
+  <DrawerRoot
     data-slot="drawer"
     :should-scale-background="shouldScaleBackground"
   >
     <slot />
-  </DrawerPrimitive.Root>
+  </DrawerRoot>
 </template>

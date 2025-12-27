@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerContent as DrawerContentPrimitive } from 'vaul-vue'
 import { cn } from '@/lib/utils'
 import { computed } from 'vue'
 import DrawerPortal from './DrawerPortal.vue'
@@ -31,12 +31,12 @@ const contentClass = computed(() =>
 <template>
   <DrawerPortal>
     <DrawerOverlay />
-    <DrawerPrimitive.Content
+    <DrawerContentPrimitive
       data-slot="drawer-content"
       :class="contentClass"
     >
       <div class="mx-auto mt-4 hidden h-2 w-[100px] shrink-0 rounded-full group-data-[vaul-drawer-direction=bottom]/drawer-content:block bg-current" />
       <slot />
-    </DrawerPrimitive.Content>
+    </DrawerContentPrimitive>
   </DrawerPortal>
 </template>

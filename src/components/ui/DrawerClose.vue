@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerClose as DrawerClosePrimitive } from 'vaul-vue'
 
 defineOptions({
   name: 'DrawerClose'
@@ -7,7 +7,7 @@ defineOptions({
 </script>
 
 <template>
-  <DrawerPrimitive.Close data-slot="drawer-close">
+  <DrawerClosePrimitive data-slot="drawer-close">
     <slot />
-  </DrawerPrimitive.Close>
+  </DrawerClosePrimitive>
 </template>

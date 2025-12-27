@@ -1,5 +1,5 @@
 <script setup>
-import { Drawer as DrawerPrimitive } from 'vaul-vue'
+import { DrawerPortal as DrawerPortalPrimitive } from 'vaul-vue'
 
 defineOptions({
   name: 'DrawerPortal'
@@ -7,7 +7,7 @@ defineOptions({
 </script>
 
 <template>
-  <DrawerPrimitive.Portal data-slot="drawer-portal">
+  <DrawerPortalPrimitive data-slot="drawer-portal">
     <slot />
-  </DrawerPrimitive.Portal>
+  </DrawerPortalPrimitive>
 </template>
