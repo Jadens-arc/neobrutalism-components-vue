@@ -23,7 +23,7 @@ npm install neobrutalism-components-vue
 Install the required peer dependencies:
 
 ```bash
-npm install vue radix-vue @vueuse/core class-variance-authority clsx tailwind-merge lucide-vue-next date-fns vue-sonner v-calendar embla-carousel-vue vaul-vue vue3-otp-input
+npm install vue radix-vue @vueuse/core class-variance-authority clsx tailwind-merge lucide-vue-next date-fns vue-sonner v-calendar@^3.0.0 embla-carousel-vue vaul-vue vue3-otp-input
 ```
 
 ### Tailwind CSS Configuration

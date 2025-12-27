@@ -1,0 +1,17 @@
+node_modules
+example
+src/app
+src/data
+src/examples
+src/markdown
+src/scripts
+src/styling
+public
+.gitignore
+.git
+*.md
+!README.md
+tsconfig.json
+velite.config.ts
+next.config.mjs
+pnpm-lock.yaml
