@@ -1,0 +1,20 @@
+<template>
+  <li 
+    data-slot="breadcrumb-item"
+    :class="cn('inline-flex items-center gap-1.5', props.class)"
+    v-bind="$attrs"
+  >
+    <slot />
+  </li>
+</template>
+
+<script setup>
+import { cn } from '@/lib/utils'
+
+const props = defineProps({
+  class: {
+    type: String,
+    default: undefined
+  }
+})
+</script>
